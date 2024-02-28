@@ -1,0 +1,245 @@
+div.a{   
+    animation: oi2 4s infinite linear, oi 0.5s infinite linear;;
+    z-index: 0;
+    margin-left: 100px;
+    margin-top: 50px;
+    height: 100px;
+    width:100px;
+    background-image: linear-gradient(to left, red,orange,yellow,green,blue,indigo,violet);
+    position: absolute;
+}
+div.a1{
+    animation: oi3 4s infinite linear,oi 0.5s infinite linear;;
+   
+    z-index: 0;
+    margin-left: 100px;
+    margin-top: 50px;
+    height: 100px;
+    width:100px;
+    background-image: linear-gradient(to left, red,orange,yellow,green,blue,indigo,violet);
+    position: absolute;
+}
+
+div.b1{
+  z-index: 3;
+  background-image: radial-gradient(rgb(27, 27, 88),rgb(27, 27, 88),rgb(27, 27, 88), blue, rgb(47, 18, 66) );
+  background-position: -60px;
+  margin-left: 30px;
+  height: 200px; 
+  width:120px; 
+ position: absolute; 
+  /*border-radius: 50%;*/
+  clip-path:  ellipse(60px 100px at 100% ) ;
+ 
+}
+
+div.b2{
+    z-index: -1;
+    background-image: radial-gradient(rgb(27, 27, 88),rgb(27, 27, 88),rgb(27, 27, 88), blue, rgb(47, 18, 66) );
+    background-position: -60px;
+    margin-left: 150px;
+    height: 200px; 
+    width:120px; 
+   position: absolute; 
+    /*border-radius: 50%;*/
+    clip-path:  ellipse(60px 100px at 0% ) ;
+   
+}
+
+div.c2{
+  z-index: -1;
+  background-image: radial-gradient(rgb(172, 114, 61),rgb(172, 114, 61),rgb(172, 114, 61), orange, rgb(228, 216, 58));
+  background-position: -60px;
+  margin-left: 450px;
+  height: 200px; 
+  width:120px; 
+  position: absolute; 
+  /*border-radius: 50%;*/
+  clip-path:  ellipse(60px 100px at 100% ) ;
+   
+}
+
+div.c1{
+  z-index: 3;
+  background-image: radial-gradient(rgb(172, 114, 61),rgb(172, 114, 61),rgb(172, 114, 61), orange, rgb(228, 216, 58));
+  background-position: -60px;
+  margin-left: 570px;
+  height: 200px; 
+  width:120px; 
+  position: absolute; 
+  /*border-radius: 50%;*/
+  clip-path:  ellipse(60px 100px at 0% ) ;
+   
+}
+
+div.fundo1{ 
+  background-color: white;
+  width: 100px;
+  height: 200px;
+  position: absolute;
+  margin-left: 40px;
+  z-index: 1;
+}
+
+div.fundo2{ 
+  background-color: white;
+  width: 100px;
+  height: 200px;
+  position: absolute;
+  margin-left: 580px;
+  z-index: 1;
+}
+
+ /* @keyframes oi {
+    0%   {background-image: linear-gradient(to left,red,orange,yellow,green,blue,indigo,violet);}
+    14.285714285714285714285714285714%   {background-image: linear-gradient(to left,orange,yellow,green,blue,indigo,violet,red);}
+    28.571428571428571428571428571428%  {background-image: linear-gradient(to left,yellow,green,blue,indigo,violet,red,orange);}
+    42.857142857142857142857142857143%  {background-image: linear-gradient(to left,green,blue,indigo,violet,red,orange,yellow);}
+    57.142857142857142857142857142857%  {background-image: linear-gradient(to left,blue,indigo,violet,red,orange,yellow,green);}
+    71.428571428571428571428571428571%  {background-image: linear-gradient(to left,indigo,violet,red,orange,yellow,green,blue);}
+    85.714285714285714285714285714286%  {background-image: linear-gradient(to left,violet,red,orange,yellow,green,blue,indigo);}
+    100%  {background-image: linear-gradient(to left,red,orange,yellow,green,blue,indigo,violet);}  
+   
+  }*/
+  @keyframes oi {
+
+    
+  }
+
+  @keyframes oi2 {
+    0%{left: 215px; }
+    63%{left: 480px;}
+    100%{left:480px;}
+
+
+  }
+  @keyframes oi3 {
+    0%{left: -50px; }
+    37%{left: -50px;}
+    100%{left: 215px;}
+
+  }
+
+  .abc{
+    background-color: black;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    display: inline-block;
+    margin: 20px;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .dentro{
+    background-color: red;
+    width: 48px;
+    height: 30px;
+    margin: 24px auto;
+    display: flex;
+    align-items: center;
+    border-radius: 6px;
+  }
+
+  .dentro:hover{
+    cursor: pointer; 
+    width: 53px;
+    height: 35px;
+    margin: 21.5px auto;
+  }
+
+  
+
+  .dentro2{
+    background-color: red;
+    width: 0px;
+    height: 0px;
+    border-left: 10px solid white;
+    border-top:8px solid transparent ;
+    border-bottom:8px solid transparent ;
+    margin: auto;
+  }
+
+  
+
+  .base{
+    width: 200px;
+    height: 200px;
+    background-color: yellow;
+    border-radius:50% ;
+    border: 15px solid black;
+    margin: 100px;
+    z-index: -1;
+   
+}
+
+.segundos{ 
+    z-index: 1;
+    margin-left: 95px;
+    width: 10px;
+    height: 200px;
+    background-color: red;
+    position: absolute;
+    clip: rect(0px,50px,100px,0px);   
+    animation: segundos 60s infinite linear;
+}
+
+@keyframes segundos {
+    0%{transform: rotate(0deg);}
+    50%{transform: rotate(180 deg);}
+    100%{transform: rotate(360deg);}
+}
+
+.minutos{ 
+    margin-top: 10px;
+    z-index: 2;
+    margin-left: 95px;
+    width: 10px;
+    height: 180px;
+    background-color: blue;
+    position: absolute;
+    clip: rect(0px,50px,90px,0px);   
+    animation: minutos 3600s infinite linear;
+}
+
+@keyframes minutos {
+    0%{transform: rotate(0deg);}
+    50%{transform: rotate(180 deg);}
+    100%{transform: rotate(360deg);}
+}
+
+.horas{ 
+    margin-top: 20px;
+    z-index: 3;
+    margin-left: 95px;
+    width: 10px;
+    height: 160px;
+    background-color: green;
+    position: absolute;
+    clip: rect(0px,50px,80px,0px);   
+    animation: horas 43200s infinite linear;
+}
+
+@keyframes horas {
+    0%{transform: rotate(0deg);}
+    50%{transform: rotate(180 deg);}
+    100%{transform: rotate(360deg);}
+}
+
+.meio{ 
+    background-color: black;
+    z-index: 4;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    position: absolute;
+    margin-top: 90px ;
+    margin-left: 90px ;
+}
+
+.numero{
+    color:  cyan;
+    position: absolute;
+    font-size: large;
+    z-index: 6;
+}
